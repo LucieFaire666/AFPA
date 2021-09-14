@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var j=new Date().getDay()
+
+function jour (j) {
+
+if ((j==0)||(j==6))    
+    {return true}
+    else {return false} 
+
+}
+
+if (jour(j) == true) {console.log (j + " est le weekend.")}
+else {console.log (j + " est de semaine.")}
+
+switch (j)
+{
+
+    case 0 : 
+        console.log ("Dimanche")
+        break
+    case 1 : 
+        console.log ("Lundi")
+        break
+    case 2 : 
+        console.log ("Mardi")
+        break
+    case 3 : 
+        console.log ("Mercredi")
+        break
+    case 4 : 
+        console.log ("Jeudi")
+        break
+    case 5 : 
+        console.log ("Vendredi")
+        break
+    case 6 : 
+        console.log ("Samedi")
+        break
+}
+
+        </script>
+
+</body>
+</html>

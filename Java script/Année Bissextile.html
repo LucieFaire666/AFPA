@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function estAnneeBissextile (annee){
+
+
+
+    if (((annee % 4 == 0) && (annee % 100 != 0)) || (annee % 400 == 0))
+
+            {return true}
+       
+    else {return false}
+
+}
+
+var annee = 2010
+
+if (estAnneeBissextile(annee) == true) {console.log (annee + " est bissextile.")}
+else {console.log (annee + " est non bissextile.")}
+
+//afficher "bissextile" si vrai
+//afficher "non bissextile" si faux
+
+for (annee =1900; annee <=2021; annee++) // vérifier les années entre 1950 et 2021
+{
+    if (estAnneeBissextile(annee))
+     {
+         document.write (annee+ " est bissextile <br>")
+
+     }
+}
+estAnneeBissextile(1990);
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+var tableau = [4,2,8,1,10]
+
+
+
+function tribulle (t) { 
+    var ischanged = true ;
+    while (ischanged)
+     { 
+        ischanged =false;
+        for (var j=0; j< t.length-1; j++)
+        {
+           if (t[j+1]<t[j])
+           {
+               var temp = t[j];
+                t[j]=t[j+1];
+                t[j+1]= temp
+                ischanged = true;
+            } 
+        }
+    }
+}
+tribulle (tableau)
+console.log (tableau)
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
